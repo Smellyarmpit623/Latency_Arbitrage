@@ -1,0 +1,15 @@
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\bin\Debug\net6.0\Lantency_arbitrage.exe
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\bin\Debug\net6.0\Lantency_arbitrage.deps.json
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\bin\Debug\net6.0\Lantency_arbitrage.runtimeconfig.json
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\bin\Debug\net6.0\Lantency_arbitrage.dll
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\bin\Debug\net6.0\Lantency_arbitrage.pdb
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\obj\Debug\net6.0\Lantency_arbitrage.csproj.AssemblyReference.cache
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\obj\Debug\net6.0\Lantency_arbitrage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\obj\Debug\net6.0\Lantency_arbitrage.AssemblyInfoInputs.cache
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\obj\Debug\net6.0\Lantency_arbitrage.AssemblyInfo.cs
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\obj\Debug\net6.0\Lantency_arbitrage.csproj.CoreCompileInputs.cache
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\obj\Debug\net6.0\Lantency_arbitrage.dll
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\obj\Debug\net6.0\refint\Lantency_arbitrage.dll
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\obj\Debug\net6.0\Lantency_arbitrage.pdb
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\obj\Debug\net6.0\Lantency_arbitrage.genruntimeconfig.cache
+C:\Users\13616\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\obj\Debug\net6.0\ref\Lantency_arbitrage.dll

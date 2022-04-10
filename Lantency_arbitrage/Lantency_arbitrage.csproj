@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="LmaxClientLibrary">
+      <HintPath>..\..\LmaxNetClientLibrary\LmaxClientLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="MT4ServerAPI">
+      <HintPath>..\..\mt4\MT4ServerAPI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

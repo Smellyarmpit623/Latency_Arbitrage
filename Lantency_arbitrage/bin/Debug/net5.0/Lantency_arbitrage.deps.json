@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Lantency_arbitrage/1.0.0": {
+        "dependencies": {
+          "LmaxClientLibrary": "1.9.0.6",
+          "MT4ServerAPI": "4.6.1340.1"
+        },
+        "runtime": {
+          "Lantency_arbitrage.dll": {}
+        }
+      },
+      "LmaxClientLibrary/1.9.0.6": {
+        "runtime": {
+          "LmaxClientLibrary.dll": {
+            "assemblyVersion": "1.9.0.6",
+            "fileVersion": "1.9.0.6"
+          }
+        }
+      },
+      "MT4ServerAPI/4.6.1340.1": {
+        "runtime": {
+          "MT4ServerAPI.dll": {
+            "assemblyVersion": "4.6.1340.1",
+            "fileVersion": "4.6.1340.1"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lantency_arbitrage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LmaxClientLibrary/1.9.0.6": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MT4ServerAPI/4.6.1340.1": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
