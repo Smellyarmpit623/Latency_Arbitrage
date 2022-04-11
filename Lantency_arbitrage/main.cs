@@ -14,11 +14,14 @@ namespace Lentency_arbitrage
     class Program
     {
         private ISession _session;
-        private const long GBP_USD_INSTRUMENT_ID = 4001;
+        private const long XAUUSD_INSTRUMENT_ID = 100637;
 
         public void MarketDataUpdate(OrderBookEvent orderBookEvent)
         {
-            Console.WriteLine("Market data: {0}", orderBookEvent);
+            decimal bestBid = GetBestPrice(orderBookEvent.BidPrices);
+            decimal bestAsk = GetBestPrice(orderBookEvent.AskPrices);
+            //Console.WriteLine("Market data: {0}", orderBookEvent);
+            Console.WriteLine("Quote of the best price: {0} {1}", bestBid,bestAsk);
         }
 
         static void Main(string[] args)
@@ -52,26 +55,27 @@ namespace Lentency_arbitrage
 
         public void LoginCallback(ISession session)
         {
-            /*
+            
             Console.WriteLine("Logged in, account ID: " + session.AccountDetails.AccountId);
             _session = session;
             session.MarketDataChanged += MarketDataUpdate;
 
-            session.Subscribe(new OrderBookSubscriptionRequest(GBP_USD_INSTRUMENT_ID),
+            session.Subscribe(new OrderBookSubscriptionRequest(XAUUSD_INSTRUMENT_ID),
                     () => Console.WriteLine("Successful subscription"),
                     failureResponse => Console.Error.WriteLine("Failed to subscribe: {0}", failureResponse));
 
-            session.Start();*/
-
+            session.Start();
+            /*
             string query = "CURRENCY"; // see above for how to do a more specific search
             long offsetInstrumentId = 0; // see above for more details on this offset parameter
 
             _session = session;
 
             session.SearchInstruments(new SearchRequest(query, offsetInstrumentId), SearchCallback,
-                failureResponse => Console.Error.WriteLine("Failed to subscribe: {0}", failureResponse));
+                failureResponse => Console.Error.WriteLine("Failed to subscribe: {0}", failureResponse));// market info
 
             _session.Start();
+            */
             //    decimal bestBid = GetBestPrice(orderBookEvent.BidPrices);
             //    decimal bestAsk = GetBestPrice(orderBookEvent.AskPrices);
 

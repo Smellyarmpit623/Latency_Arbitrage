@@ -34,3 +34,21 @@ C:\Users\Steve\OneDrive - Queensland University of Technology\Documents\coding\L
 C:\Users\Steve\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\obj\Debug\net5.0\Lantency_arbitrage.pdb
 C:\Users\Steve\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\obj\Debug\net5.0\Lantency_arbitrage.genruntimeconfig.cache
 C:\Users\Steve\OneDrive - Queensland University of Technology\Documents\coding\Lantency_arbitrage\Lantency_arbitrage\bin\Debug\net5.0\LmaxClientLibrary.dll
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\Lantency_arbitrage.exe
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\Lantency_arbitrage.deps.json
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\Lantency_arbitrage.runtimeconfig.json
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\Lantency_arbitrage.runtimeconfig.dev.json
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\Lantency_arbitrage.dll
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\ref\Lantency_arbitrage.dll
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\Lantency_arbitrage.pdb
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\LmaxClientLibrary.dll
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\MT4ServerAPI.dll
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\obj\Debug\net5.0\Lantency_arbitrage.csproj.AssemblyReference.cache
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\obj\Debug\net5.0\Lantency_arbitrage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\obj\Debug\net5.0\Lantency_arbitrage.AssemblyInfoInputs.cache
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\obj\Debug\net5.0\Lantency_arbitrage.AssemblyInfo.cs
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\obj\Debug\net5.0\Lantency_arbitrage.csproj.CoreCompileInputs.cache
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\obj\Debug\net5.0\Lantency_arbitrage.dll
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\obj\Debug\net5.0\ref\Lantency_arbitrage.dll
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\obj\Debug\net5.0\Lantency_arbitrage.pdb
+C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\obj\Debug\net5.0\Lantency_arbitrage.genruntimeconfig.cache
