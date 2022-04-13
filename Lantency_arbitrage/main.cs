@@ -7,6 +7,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Threading;
+using IronOcr;
+using System.Linq;
+using System.Runtime.InteropServices;
+using Point = System.Drawing.Point;
+using System.Drawing;
+using System.Configuration;
+using System.IO;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Windows.Forms;
 
 
 namespace Lentency_arbitrage
@@ -27,10 +37,24 @@ namespace Lentency_arbitrage
         static void Main(string[] args)
         {
 
-            new Program().Lmax();
+            //new Program().Lmax();
+            
+
+            var Result = new IronTesseract().Read(Program().GetSreenshot()).Text;
+            Console.WriteLine(Result);
             //new Program().main_loop();
         }
-        
+
+
+
+
+        private Bitmap GetSreenshot()
+        {
+            Bitmap bm = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            Graphics g = Graphics.FromImage(bm);
+            g.CopyFromScreen(0, 0, 0, 0, bm.Size);
+            return bm;
+        }
         void main_loop()
         {
 
@@ -42,7 +66,7 @@ namespace Lentency_arbitrage
             
             
             qc.OnQuote += new QuoteEventHandler(qc_OnQuote);
-            qc.Subscribe("EURUSD");
+            qc.Subscribe("XAUUSD");
             Console.ReadKey();                
             
             
@@ -149,10 +173,11 @@ namespace Lentency_arbitrage
         void qc_OnQuote(object sender, QuoteEventArgs args)
         {
 
-            Console.WriteLine(args.Symbol + " " + args.Bid + " " + args.Ask +" "+(100000*(Convert.ToDouble(args.Ask)-Convert.ToDouble(args.Bid))));
+            Console.WriteLine(args.Symbol + " " + args.Bid + " " + args.Ask +" "+(100*(Convert.ToDouble(args.Ask)-Convert.ToDouble(args.Bid))));
         }
 
     }
 }
 
 
+    

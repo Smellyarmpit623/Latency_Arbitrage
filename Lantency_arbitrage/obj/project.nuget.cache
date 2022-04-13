@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "SUJgmgp/Nvpguc5c2vBKcY5MWvfNm5v8N5A98tACNbEho+XdpKy3unZnvSh7Uz9lxYhMMQMAOQDd10x+JYo3XA==",
+  "dgSpecHash": "KiBd/Gz5enBVGJ5P0RTqxgaksKiRkThrqaEIn9k7G+XV4X45VimummEkaTFXj6sNElC12jPz8J2/eFAv/KTpZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Steve\\OneDrive - St Pauls School\\Documents\\GitHub\\Lantency_Arbitrage\\Lantency_arbitrage\\Lantency_arbitrage.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\13616\\OneDrive\\文档\\GitHub\\Lantency_Arbitrage\\Lantency_arbitrage\\Lantency_arbitrage.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\13616\\.nuget\\packages\\ironocr\\2022.3.0\\ironocr.2022.3.0.nupkg.sha512",
+    "C:\\Users\\13616\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\13616\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\13616\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.15\\microsoft.netcore.app.host.win-x64.5.0.15.nupkg.sha512",
+    "C:\\Users\\13616\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\13616\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\13616\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
