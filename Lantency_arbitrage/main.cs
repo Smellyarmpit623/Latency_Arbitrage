@@ -19,31 +19,34 @@ using System.Drawing.Imaging;
 using System.Windows.Forms;
 
 
-namespace Lentency_arbitragep
+namespace Lentency_arbitrage
 {
     class Program
     {
         private ISession _session;
-        private const long XAUUSD_INSTRUMENT_ID = 100637;
+        private const long XAUUSD_INSTRUMENT_ID = 4001; //EURUSD
 
         public void MarketDataUpdate(OrderBookEvent orderBookEvent)
         {
             decimal bestBid = GetBestPrice(orderBookEvent.BidPrices);
             decimal bestAsk = GetBestPrice(orderBookEvent.AskPrices);
             //Console.WriteLine("Market data: {0}", orderBookEvent);
-            Console.WriteLine("Quote of the best price: {0} {1}", bestBid,bestAsk);
+            Console.WriteLine("Quote of the best price: {0} {1}", (bestAsk),bestBid);
+            var Result = new IronTesseract().Read(new Program().GetSreenshot()).Text;
+            decimal Quotation_lmax = (bestAsk + bestBid) / 2;
+            
+            Console.WriteLine(Result);
         }
 
         static void Main(string[] args)
         {
 
-            //new Program().Lmax();
+            new Program().Lmax();
 
-            while (1 == 1)
-            {
-                var Result = new IronTesseract().Read(new Program().GetSreenshot()).Text;
-                Console.WriteLine(Result);
-            }
+            
+
+            
+
             //new Program().main_loop();
         }
 
@@ -52,12 +55,19 @@ namespace Lentency_arbitragep
 
         private Bitmap GetSreenshot()
         {
+           
+            int x, y, dx, dy;
+            x = 1780;
+            y = 500;
+            dx = 1830;
+            dy = 512;
 
-            Bitmap bm = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            Bitmap bm = new Bitmap(dx-x, dy-y);
             Graphics g = Graphics.FromImage(bm);
-            g.CopyFromScreen(2050, 750, 2300, 835, bm.Size);
-            g.Graphics.DrawImage(bm, 500, 500);
+            g.CopyFromScreen(x, y, 0, 0, bm.Size);
+            bm.Save(@"C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\test.png");
             return bm;
+
         }
         void main_loop()
         {

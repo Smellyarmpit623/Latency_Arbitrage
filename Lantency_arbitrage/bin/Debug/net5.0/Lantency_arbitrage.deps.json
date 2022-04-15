@@ -92,11 +92,6 @@
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.50727.9149"
           }
-        },
-        "resources": {
-          "zh-CHS/System.Windows.Forms.resources.dll": {
-            "locale": "zh-CHS"
-          }
         }
       },
       "Accessibility/2.0.0.0": {
@@ -113,11 +108,6 @@
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.50727.9149"
           }
-        },
-        "resources": {
-          "zh-CHS/System.Runtime.Serialization.Formatters.Soap.resources.dll": {
-            "locale": "zh-CHS"
-          }
         }
       },
       "System.Deployment/2.0.0.0": {
@@ -125,11 +115,6 @@
           "System.Deployment.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.50727.9149"
-          }
-        },
-        "resources": {
-          "zh-CHS/System.Deployment.resources.dll": {
-            "locale": "zh-CHS"
           }
         }
       }
