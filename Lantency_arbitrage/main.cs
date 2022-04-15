@@ -19,7 +19,7 @@ using System.Drawing.Imaging;
 using System.Windows.Forms;
 
 
-namespace Lentency_arbitrage
+namespace Lentency_arbitragep
 {
     class Program
     {
