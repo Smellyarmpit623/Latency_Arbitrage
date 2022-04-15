@@ -11,7 +11,8 @@
           "IronOcr": "2022.3.0",
           "System.Drawing.Common": "6.0.0",
           "LmaxClientLibrary": "1.9.0.6",
-          "MT4ServerAPI": "4.6.1340.1"
+          "MT4ServerAPI": "4.6.1340.1",
+          "System.Windows.Forms": "2.0.0.0"
         },
         "runtime": {
           "Lantency_arbitrage.dll": {}
@@ -84,6 +85,53 @@
             "fileVersion": "4.6.1340.1"
           }
         }
+      },
+      "System.Windows.Forms/2.0.0.0": {
+        "runtime": {
+          "System.Windows.Forms.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.50727.9149"
+          }
+        },
+        "resources": {
+          "zh-CHS/System.Windows.Forms.resources.dll": {
+            "locale": "zh-CHS"
+          }
+        }
+      },
+      "Accessibility/2.0.0.0": {
+        "runtime": {
+          "Accessibility.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.50727.9149"
+          }
+        }
+      },
+      "System.Runtime.Serialization.Formatters.Soap/2.0.0.0": {
+        "runtime": {
+          "System.Runtime.Serialization.Formatters.Soap.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.50727.9149"
+          }
+        },
+        "resources": {
+          "zh-CHS/System.Runtime.Serialization.Formatters.Soap.resources.dll": {
+            "locale": "zh-CHS"
+          }
+        }
+      },
+      "System.Deployment/2.0.0.0": {
+        "runtime": {
+          "System.Deployment.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.50727.9149"
+          }
+        },
+        "resources": {
+          "zh-CHS/System.Deployment.resources.dll": {
+            "locale": "zh-CHS"
+          }
+        }
       }
     }
   },
@@ -120,6 +168,26 @@
       "sha512": ""
     },
     "MT4ServerAPI/4.6.1340.1": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Windows.Forms/2.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Accessibility/2.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.Serialization.Formatters.Soap/2.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Deployment/2.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

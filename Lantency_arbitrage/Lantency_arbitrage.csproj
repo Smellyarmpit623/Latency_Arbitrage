@@ -36,6 +36,9 @@
     <Reference Include="MT4ServerAPI">
       <HintPath>..\..\mt4\MT4ServerAPI.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\Framework64\v2.0.50727\System.Windows.Forms.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

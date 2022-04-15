@@ -38,10 +38,12 @@ namespace Lentency_arbitrage
         {
 
             //new Program().Lmax();
-            
 
-            var Result = new IronTesseract().Read(Program().GetSreenshot()).Text;
-            Console.WriteLine(Result);
+            while (1 == 1)
+            {
+                var Result = new IronTesseract().Read(new Program().GetSreenshot()).Text;
+                Console.WriteLine(Result);
+            }
             //new Program().main_loop();
         }
 
@@ -50,9 +52,11 @@ namespace Lentency_arbitrage
 
         private Bitmap GetSreenshot()
         {
+
             Bitmap bm = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
             Graphics g = Graphics.FromImage(bm);
-            g.CopyFromScreen(0, 0, 0, 0, bm.Size);
+            g.CopyFromScreen(2050, 750, 2300, 835, bm.Size);
+            g.Graphics.DrawImage(bm, 500, 500);
             return bm;
         }
         void main_loop()

@@ -78,3 +78,10 @@ C:\Users\13616\OneDrive\文档\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\
 C:\Users\13616\OneDrive\文档\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
 C:\Users\13616\OneDrive\文档\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
 C:\Users\13616\OneDrive\文档\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\13616\OneDrive\文档\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\System.Windows.Forms.dll
+C:\Users\13616\OneDrive\文档\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\Accessibility.dll
+C:\Users\13616\OneDrive\文档\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\System.Runtime.Serialization.Formatters.Soap.dll
+C:\Users\13616\OneDrive\文档\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\System.Deployment.dll
+C:\Users\13616\OneDrive\文档\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\zh-CHS\System.Windows.Forms.resources.dll
+C:\Users\13616\OneDrive\文档\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\zh-CHS\System.Runtime.Serialization.Formatters.Soap.resources.dll
+C:\Users\13616\OneDrive\文档\GitHub\Lantency_Arbitrage\Lantency_arbitrage\bin\Debug\net5.0\zh-CHS\System.Deployment.resources.dll
