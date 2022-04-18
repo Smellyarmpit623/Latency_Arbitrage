@@ -13,10 +13,13 @@ using System.Runtime.InteropServices;
 using Point = System.Drawing.Point;
 using System.Drawing;
 using System.Configuration;
-using System.IO;
+
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
+using System.Text;
+using System.Security.Permissions;
+
 
 
 namespace Lentency_arbitrage
@@ -24,28 +27,75 @@ namespace Lentency_arbitrage
     class Program
     {
         private ISession _session;
-        private const long XAUUSD_INSTRUMENT_ID = 4001; //EURUSD
-
+        private const long XAUUSD_INSTRUMENT_ID = 4017; //USDJPY
+        decimal max=0;
+        
         public void MarketDataUpdate(OrderBookEvent orderBookEvent)
         {
             decimal bestBid = GetBestPrice(orderBookEvent.BidPrices);
             decimal bestAsk = GetBestPrice(orderBookEvent.AskPrices);
             //Console.WriteLine("Market data: {0}", orderBookEvent);
-            Console.WriteLine("Quote of the best price: {0} {1}", (bestAsk),bestBid);
+            //Console.WriteLine("Quote of the best price: {0} {1}", (bestAsk),bestBid);
             var Result = new IronTesseract().Read(new Program().GetSreenshot()).Text;
-            decimal Quotation_lmax = (bestAsk + bestBid) / 2;
+            decimal Quotation_lmax = bestBid;
+            decimal option_quote=0;
+            try
+            {
+                option_quote = Convert.ToDecimal(Result);
+                Console.WriteLine("Quote of the Lmax and option: {0} {1}", (Quotation_lmax), option_quote);
+                decimal Difference=(Quotation_lmax*100000)-(option_quote*100000);
+                if (Difference <= 0) Difference = Difference * -1;
+                Console.WriteLine("Difference= {0}",Difference);
+                if (max <= Difference) max = Difference;
+                Console.WriteLine(max);
+                /*using (StreamWriter sw = File.AppendText(@"D:\\data.txt"))
+                {
+                    sw.WriteLine("Fast Quote={0}  Slow Quote={1}  Difference={2}  Max_Difference={3}", Quotation_lmax, option_quote, Difference,max);
+                    sw.Flush();
+                    sw.Close();
+                }
+                using (StreamWriter sw = File.AppendText(@"D:\\Lmax.txt"))
+                {
+                    sw.WriteLine(Quotation_lmax);
+                    sw.Flush();
+                    sw.Close();
+                }
+                using (StreamWriter sw = File.AppendText(@"D:\\Slow_Quote.txt"))
+                {
+                    sw.WriteLine(option_quote);
+                    sw.Flush();
+                    sw.Close();
+                }
+                using (StreamWriter sw = File.AppendText(@"D:\\Difference.txt"))
+                {
+                    sw.WriteLine(Difference);
+                    sw.Flush();
+                    sw.Close();
+                }
+                using (StreamWriter sw = File.AppendText(@"D:\\Max.txt"))
+                {
+                    sw.WriteLine(max);
+                    sw.Flush();
+                    sw.Close();
+                }
+                */
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Cant convert");
+            }
             
-            Console.WriteLine(Result);
         }
 
         static void Main(string[] args)
         {
+            while(1==1)
+            SendKeys.SendWait("{A}");
+            //new Program().Lmax();
+            //Console.ReadKey();
 
-            new Program().Lmax();
 
-            
 
-            
 
             //new Program().main_loop();
         }
@@ -57,10 +107,10 @@ namespace Lentency_arbitrage
         {
            
             int x, y, dx, dy;
-            x = 1780;
-            y = 500;
-            dx = 1830;
-            dy = 512;
+            x = 1485;
+            y = 705;
+            dx = 1579;
+            dy = 731;
 
             Bitmap bm = new Bitmap(dx-x, dy-y);
             Graphics g = Graphics.FromImage(bm);

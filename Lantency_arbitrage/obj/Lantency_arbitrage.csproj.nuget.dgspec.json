@@ -48,7 +48,15 @@
               "target": "Package",
               "version": "[2022.3.0, )"
             },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Security.Permissions": {
               "target": "Package",
               "version": "[6.0.0, )"
             }
