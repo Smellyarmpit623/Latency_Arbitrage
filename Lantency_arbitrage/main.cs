@@ -44,7 +44,13 @@ namespace Lentency_arbitrage
                 option_quote = Convert.ToDecimal(Result);
                 Console.WriteLine("Quote of the Lmax and option: {0} {1}", (Quotation_lmax), option_quote);
                 decimal Difference=(Quotation_lmax*100000)-(option_quote*100000);
-                if (Difference <= 0) Difference = Difference * -1;
+                if (Difference <= 0) { 
+                    Difference = Difference * -1;
+                    if(Difference <=10)
+                    SendKeys.SendWait("+{S}");
+                }
+                else if(Difference>=10)
+                    SendKeys.SendWait("+{W}");
                 Console.WriteLine("Difference= {0}",Difference);
                 if (max <= Difference) max = Difference;
                 Console.WriteLine(max);
@@ -89,9 +95,9 @@ namespace Lentency_arbitrage
 
         static void Main(string[] args)
         {
-            while(1==1)
-            SendKeys.SendWait("{A}");
-            //new Program().Lmax();
+            
+            
+            new Program().Lmax();
             //Console.ReadKey();
 
 
