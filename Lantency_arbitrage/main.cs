@@ -27,7 +27,7 @@ namespace Lentency_arbitrage
     class Program
     {
         private ISession _session;
-        private const long XAUUSD_INSTRUMENT_ID = 4017; //USDJPY
+        private const long XAUUSD_INSTRUMENT_ID = 4004; //USDJPY
         decimal max=0;
         
         public void MarketDataUpdate(OrderBookEvent orderBookEvent)
@@ -38,18 +38,20 @@ namespace Lentency_arbitrage
             //Console.WriteLine("Quote of the best price: {0} {1}", (bestAsk),bestBid);
             var Result = new IronTesseract().Read(new Program().GetSreenshot()).Text;
             decimal Quotation_lmax = bestBid;
-            decimal option_quote=0;
+            decimal option_quote=1;
             try
             {
+
                 option_quote = Convert.ToDecimal(Result);
                 Console.WriteLine("Quote of the Lmax and option: {0} {1}", (Quotation_lmax), option_quote);
-                decimal Difference=(Quotation_lmax*100000)-(option_quote*100000);
+                
+                decimal Difference=(Quotation_lmax*1000)-(option_quote*1000);
                 if (Difference <= 0) { 
-                    Difference = Difference * -1;
-                    if(Difference <=10)
+                    if(Difference <=-14)
                     SendKeys.SendWait("+{S}");
+                    Difference = Difference * -1;
                 }
-                else if(Difference>=10)
+                else if(Difference>=14)
                     SendKeys.SendWait("+{W}");
                 Console.WriteLine("Difference= {0}",Difference);
                 if (max <= Difference) max = Difference;
@@ -113,15 +115,15 @@ namespace Lentency_arbitrage
         {
            
             int x, y, dx, dy;
-            x = 1485;
-            y = 705;
-            dx = 1579;
-            dy = 731;
+            x = 1152;
+            y = 897;
+            dx = 1271;
+            dy = 925;
 
             Bitmap bm = new Bitmap(dx-x, dy-y);
             Graphics g = Graphics.FromImage(bm);
             g.CopyFromScreen(x, y, 0, 0, bm.Size);
-            bm.Save(@"C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\test.png");
+            //bm.Save(@"C:\Users\Steve\OneDrive - St Pauls School\Documents\GitHub\Lantency_Arbitrage\Lantency_arbitrage\test.png");
             return bm;
 
         }
